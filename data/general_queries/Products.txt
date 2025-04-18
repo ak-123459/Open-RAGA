@@ -1,9 +1,26 @@
-🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
+🛑 Rules for Product Assistant Bot:
+1. Do NOT perform any mathematical calculations (like 2*2 or 400×12.50).
+2. Only return product information that matches the user's query.
+3. If a quantity (like 10, 300, 2/2, 3*3) is given, just match the size, don’t multiply price.
+4. If asked for “total p
+rice”, reply with price per sq. ft or fixed rate, without calculating.
+5. If the size is not standard, mention custom sizes are also available.
+6.You can show price details for the relevent query product.
+
+
+Always give a helpful, polite reply with relevant fields from the product.
+
+
+
+🪧 Product: Premium Vinyl Flex Banner1  
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)
-💸 Price: ₹75 per banner
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time 
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹175
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot💸 Fixed Price Option: ₹75 per standard-size banner (e.g., 3x2 ft)
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
 Sample:
 
@@ -11,21 +28,27 @@ Sample:
 
 
 🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time
-💸 Price: ₹75 per banner
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot💸 Fixed Price Option: ₹75 per standard-size banner (e.g., 3x2 ft)
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
 Sample:
 
 
 🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time 
-💸 Price: ₹75 per banner
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot💸 Fixed Price Option: ₹75 per standard-size banner (e.g., 3x2 ft)
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
 Sample:
 
@@ -33,19 +56,25 @@ Sample:
 
 
 🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
-💸 Price: ₹75 per banner
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time 
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot💸 Fixed Price Option: ₹75 per standard-size banner (e.g., 3x2 ft)
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
 Sample:
 
 
 
 🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
-💸 Price: ₹75 per banner
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot💸 Fixed Price Option: ₹75 per standard-size banner (e.g., 3x2 ft) 
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time 
@@ -55,9 +84,12 @@ Sample:
 
 
 🪧 Product: Premium Vinyl Flex Banner
-💸 Price: ₹75 per banner
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
-🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
+📐 Price per sq. ft: ₹12.50  
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time 
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
@@ -67,12 +99,13 @@ Sample:
 
 
 🪧 Product: Premium Vinyl Flex Banner  
-📏 Sizes: 3x2 ft, 6x3 ft, 10x4 ft, or custom sizes  
+Sizes and Prices:
+- 3x2 ft — ₹75
+- 6x3 ft — ₹75
+- 10x4 ft — ₹75
+- Custom size — ₹10 per square foot
 🧵 Material: Star Flex / Frontlit Vinyl (510 GSM)  
 🎨 Design: Custom logos, text, and full-color graphics  
 📦 Delivery:  On Time
-💸 Price: ₹75 per banner
 ✅ Ideal For: Shop promotions, events, political campaigns, and real estate boards
 Sample:
-
-
