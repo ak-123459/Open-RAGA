@@ -29,9 +29,10 @@ translate_prompt_Temp = get_template('translator')['translator']
 history_aware_prompt = prompt_config['context_aware_prompt']['prompt']
 details_agent_prompt = prompt_config['details_agent_prompt']['prompt']
 translate_to_hindi = get_template('translator_english_hindi')['translator_english_hindi']
+
 # Chat manager class to manage chat
 class ChatManager:
-    
+    """ """
     def __init__(self, llm, vector_db):
 
         self.llm = llm
