@@ -3,7 +3,7 @@ import yaml
 from pathlib import Path
 import os
 
-
+# Get the root dirctory path
 root_path = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -17,11 +17,22 @@ with open(root_path+"/prompt_templates.yaml", "r",encoding="utf-8") as file:
 
 
 
-
 def get_template(name="main_prompt") -> dict:
 
+    """this get_template function will create the template  and return the dict with PromptTemplate
+    
+    Args:
+
+    name(str) : prompt template name
+    
+    Returns:
+     dict: {"template name": PromptTemplate}
+    
+    """
+    
     
     if name == "translator":
+        
        return {"translator":PromptTemplate.from_template(prompt_config['translator']['prompt'])}
 
 
