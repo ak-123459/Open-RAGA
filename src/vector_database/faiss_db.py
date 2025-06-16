@@ -23,7 +23,7 @@ class Faiss_db:
         self.index_name = kwargs.get("index_name","index")
         self.docs_path = kwargs.get("docs_path")
 
-  async  def load_faiss_db(self):
+ async  def load_faiss_db(self):
         if(os.path.exists(self.vector_store_path)):
             vector_db =   FAISS.load_local(folder_path = self.vector_store_path,index_name=self.index_name ,embeddings=self.embedding_model, allow_dangerous_deserialization=self.allow_dangerous_deserialization)
             return vector_db
