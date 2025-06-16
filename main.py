@@ -16,6 +16,11 @@ from src.llm.llm_factory import CHATLLMFactory
 from src.embedder.embedder_factory import EMBFactory
 from src.vector_database.vector_db_factory import VECTORDBFactory
 
+
+print("=== Starting the app ===")
+
+
+
 # Load environment variables
 load_dotenv()
 
