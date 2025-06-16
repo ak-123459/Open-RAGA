@@ -30,14 +30,14 @@ class Faiss_db:
             logging.info("database loaded successfully..")
 
         else:
-              await self.create_vector_embeddings(docs_path=self.docs_path,output_index_path=self.vector_store_path)
+              self.create_vector_embeddings(docs_path=self.docs_path,output_index_path=self.vector_store_path)
               vector_db = FAISS.load_local(folder_path=self.vector_store_path, index_name=self.index_name,
                                            embeddings=self.embedding_model,
                                            allow_dangerous_deserialization=self.allow_dangerous_deserialization)
               return vector_db
 
    # Create vector Embeddings datastore
-  async  def create_vector_embeddings(self,docs_path,output_index_path):
+ def create_vector_embeddings(self,docs_path,output_index_path):
 
 
         # Split into chunks
