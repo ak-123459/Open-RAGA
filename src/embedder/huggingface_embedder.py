@@ -48,9 +48,7 @@ class Huggingface_embedders(EMBInterface):
 
                  logging.info("Downloading embedding model..")
 
-                 embedding_model = HuggingFaceEmbeddings(model_name=self.model_name)  # get model from sources
-
-                 embedding_model.save(self.model_path)  # save the embedd. model
+                 embedding_model = HuggingFaceEmbeddings(model_name=self.model_name,cache_folder=self.model_path)  # get model from sources
 
                  logging.info(f"Embedding Model downloaded Successfully at {self.model_path}...")
 
