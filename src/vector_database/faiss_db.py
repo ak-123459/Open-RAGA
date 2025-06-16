@@ -23,7 +23,7 @@ class Faiss_db:
         self.index_name = kwargs.get("index_name","index")
         self.docs_path = kwargs.get("docs_path")
 
- async  def load_faiss_db(self):
+  async  def load_faiss_db(self):
         if(os.path.exists(self.vector_store_path)):
             vector_db =   FAISS.load_local(folder_path = self.vector_store_path,index_name=self.index_name ,embeddings=self.embedding_model, allow_dangerous_deserialization=self.allow_dangerous_deserialization)
             return vector_db
@@ -37,7 +37,7 @@ class Faiss_db:
               return vector_db
 
    # Create vector Embeddings datastore
- def create_vector_embeddings(self,docs_path,output_index_path):
+  def create_vector_embeddings(self,docs_path,output_index_path):
 
 
         # Split into chunks
