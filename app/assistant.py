@@ -32,10 +32,10 @@ translate_to_hindi = get_template('translator_english_hindi')['translator_englis
 
 # Chat manager class to manage chat
 class ChatManager:
-""" 
-this chat manager class will handle vector database and llm with langchain this class create the translation chain,history_aware_retriever_chain and  q_a_chain
-with langchain.
-"""
+    """ 
+    this chat manager class will handle vector database and llm with langchain this class create the translation chain,history_aware_retriever_chain and  q_a_chain
+    with langchain.
+    """
     def __init__(self, llm, vector_db):
 
         self.llm = llm
@@ -46,9 +46,9 @@ with langchain.
     
      # Create a rag chain
     def _create_rag_chain(self):
-    """this will create a combine chain :
-    first it will retrieve the similar context then it will pass to the qa chain in which llm will use this retrieved context for question answer.
-    """
+        """this will create a combine chain :
+        first it will retrieve the similar context then it will pass to the qa chain in which llm will use this retrieved context for question answer.
+        """
         return create_retrieval_chain(
             self.history_aware_retriever_chain(),
             self.q_a_chain()
@@ -58,10 +58,10 @@ with langchain.
 
     # history aware/context aware chain for retrieving the context from the vector database
     def history_aware_retriever_chain(self):
-    """ 
-    this function will take the chat history,user query and history_aware_prompt to create a standalone question then this will pass to the history_aware_retriever_chain
-    chain that will retrieve the simlilar context.    
-    """
+        """ 
+        this function will take the chat history,user query and history_aware_prompt to create a standalone question then this will pass to the history_aware_retriever_chain
+        chain that will retrieve the simlilar context.    
+        """
 
 
        # ChatPromptTemplate to pass list of args or prompts to create a standlone question 
@@ -86,9 +86,9 @@ with langchain.
 
     # question answer chain for the answer  the  questions from the retrieved context
     def q_a_chain(self):
-    """ 
-    this qa chain will use to answer the question this is a details agent chain this will generate the final answer
-    """
+        """ 
+        this qa chain will use to answer the question this is a details agent chain this will generate the final answer
+        """
         
         qa_prompt = ChatPromptTemplate.from_messages(
             [
