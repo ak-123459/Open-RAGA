@@ -19,6 +19,7 @@ embedder_args:
   model_name: sentence-transformers/all-mpnet-base-v2
   model_kwargs:
     device: cpu
+    local_files_only: true
   encode_kwargs:
     normalize_embeddings: true
   model_path: "./src/embedder/model_checkpoints/"
