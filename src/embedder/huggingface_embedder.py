@@ -48,7 +48,7 @@ class Huggingface_embedders(EMBInterface):
 
                  logging.info("Downloading embedding model..")
 
-                 embedding_model = SentenceTransformer(self.model_name)  # get model from sources
+                 embedding_model = HuggingFaceEmbeddings(model_name=self.model_name)  # get model from sources
 
                  embedding_model.save(self.model_path)  # save the embedd. model
 
