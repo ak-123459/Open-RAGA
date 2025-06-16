@@ -168,11 +168,8 @@ In toady tech world generative artificial intelligence(GenAI) has many applicati
 
 ***
 
-<div align= "start">
- 
-&nbsp; &nbsp; <a href="https://imgbb.com/"><img src="🚀" alt="rocket" width="50" border="0"></a>
+**🚀**
 
-</div>
 
 - ## **Installation & Project Setup**
   
@@ -193,9 +190,8 @@ In toady tech world generative artificial intelligence(GenAI) has many applicati
 
 **Clone the repo.**
 
-  ``git clone https://github.com/ak-123459/Open-RAGA.git
-cd Open-RAGA
-  ``
+  ``git clone https://github.com/ak-123459/Open-RAGA.git``
+``cd Open-RAGA``
 
 
 
@@ -203,9 +199,8 @@ cd Open-RAGA
 
 **Create virtual environmemt**
 
-``pyhon -m venv OpenRaga
-source OpenRaga\bin\activate
-``
+``pyhon -m venv OpenRaga``
+``source OpenRaga\bin\activate``
 
 Installed necessary packages
 
