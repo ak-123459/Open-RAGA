@@ -112,7 +112,11 @@ def detect_and_read(file_path):
 # function to merge all files into one file
 def get_file_contents(folder_path):
   
-  
+  """
+  this function will take folder path of docs and read all documents and append in single file_contents.following file are supported ".txt" 
+  ".pdf",".docx",".doc",".csv",".xlsx", ".json",".md",  ".html",  ".pptx"
+
+  """
   file_contents = []
   
   for filename in os.listdir(folder_path):

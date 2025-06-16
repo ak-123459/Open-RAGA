@@ -1,4 +1,4 @@
-import os.path
+import os
 
 from langchain_community.vectorstores import FAISS
 import logging
@@ -6,19 +6,15 @@ from langchain.text_splitter import CharacterTextSplitter
 from scripts.prepare_data import get_file_contents
 import logging
 
-
-
 # Configure basic logging
 logging.basicConfig(level=logging.INFO)
-
 
 
 # Class to load Faiss(Facebook AI similarity search)
 
 class Faiss_db:
-
-    def __init__(self,**kwargs):
-
+   
+  def __init__(self,**kwargs):
         self.vector_store_path = kwargs.get("vector_store_path")
         self.embedding_model =  kwargs.get("embedding_model")
         self.chunk_size  =  kwargs.get("chunk_size")
@@ -27,27 +23,20 @@ class Faiss_db:
         self.index_name = kwargs.get("index_name","index")
         self.docs_path = kwargs.get("docs_path")
 
-
   async  def load_faiss_db(self):
-
         if(os.path.exists(self.vector_store_path)):
-
             vector_db =   FAISS.load_local(folder_path = self.vector_store_path,index_name=self.index_name ,embeddings=self.embedding_model, allow_dangerous_deserialization=self.allow_dangerous_deserialization)
+            return vector_db
             logging.info("database loaded successfully..")
 
         else:
-
               await self.create_vector_embeddings(docs_path=self.docs_path,output_index_path=self.vector_store_path)
               vector_db = FAISS.load_local(folder_path=self.vector_store_path, index_name=self.index_name,
                                            embeddings=self.embedding_model,
                                            allow_dangerous_deserialization=self.allow_dangerous_deserialization)
-
               return vector_db
 
-
-
-
-# Create vector Embeddings datastore
+   # Create vector Embeddings datastore
   async  def create_vector_embeddings(self,docs_path,output_index_path):
 
 
@@ -75,8 +64,7 @@ class Faiss_db:
 
 
 
-
-    def append_embeddings(self,index_name,vector_db_path,docs_path,output_index_path,allow_dangerous_deserialization):
+  def append_embeddings(self,index_name,vector_db_path,docs_path,output_index_path,allow_dangerous_deserialization):
 
 
             # Split into chunks

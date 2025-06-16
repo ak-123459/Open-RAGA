@@ -3,7 +3,7 @@ import yaml
 from pathlib import Path
 import os
 
-
+# Get the root dirctory path
 root_path = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -15,23 +15,24 @@ with open(root_path+"/prompt_templates.yaml", "r",encoding="utf-8") as file:
 
 
 
-# Load a .yaml or .yml file
-with open(Path(root_path).parent/"config/dev/app_config.yaml", "r",encoding="utf-8") as file:
-    classes = yaml.safe_load(file)
-
-
-
-functions = ", ".join(classes['functions'])
-top_label_intent = ", ".join(classes['top_label_intent'])
-intent_mode = ", ".join(classes['intent_mode'])
-
-
 
 
 def get_template(name="main_prompt") -> dict:
 
+    """this get_template function will create the template  and return the dict with PromptTemplate
+    
+    Args:
+
+    name(str) : prompt template name
+    
+    Returns:
+     dict: {"template name": PromptTemplate}
+    
+    """
+    
     
     if name == "translator":
+        
        return {"translator":PromptTemplate.from_template(prompt_config['translator']['prompt'])}
 
 
@@ -59,6 +60,11 @@ def get_template(name="main_prompt") -> dict:
 
            return {"main_agent_prompt":PromptTemplate.from_template(prompt_config['main_agent_prompt']['prompt'])}
 
+    elif name=="translator_english_hindi":
+
+           return {"translator_english_hindi":PromptTemplate.from_template(prompt_config['translator_english_hindi']['prompt'])}
    
+
+
     else:    raise ValueError(f"Unknown template: {name}")
 

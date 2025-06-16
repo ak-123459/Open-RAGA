@@ -19,6 +19,7 @@ __pycache__/
 ./src/embedder/model_checkpoints/
 
 
+
 #Ignore docs files
 ./data/preprocessed/
 

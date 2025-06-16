@@ -1,0 +1,78 @@
+Eklavya University - Courses Offered
+
+1. Engineering & Technology
+- Diploma: Polytechnic
+- Undergraduate: B.Tech (CE, CSE, EX, ME, EC)
+- Postgraduate: M.Tech (CE, CSE, EX, ME, EC)
+
+2. Agriculture
+- Diploma: Agriculture Diploma
+- Undergraduate: B.Sc (Hons.) in Agriculture
+- Postgraduate: M.Sc in Agriculture
+
+3. Education
+- Diploma: D.El.Ed
+- Undergraduate: B.Ed
+- Postgraduate: M.Ed, MA (Education)
+
+4. Management
+- Undergraduate: BBA
+- Postgraduate: MBA
+
+5. Commerce
+- Undergraduate: B.Com (Plain), B.Com (Computer Applications)
+- Postgraduate: M.Com
+
+6. Nursing
+- Certificate/Diploma: ANM, PB.BSc
+- Undergraduate: B.Sc Nursing
+- Postgraduate: M.Sc Nursing
+
+7. Paramedical Sciences
+- Diploma: DMLT, DPOA
+- Undergraduate: BPT, BMLT
+
+8. Pharmacy
+- Diploma: D.Pharm
+- Undergraduate: B.Pharm
+
+9. Physical Education
+- Undergraduate: BPES, B.P.Ed
+- Postgraduate: MPES
+
+10. Computer Science & Applications
+- Certificate/Diploma: DCA, PGDCA
+- Undergraduate: BCA
+- Postgraduate: MCA
+
+11. Arts & Humanities
+- Undergraduate: BA
+- Postgraduate: MA
+  * Subjects: History, Geography, Economics, Political Science, Sociology, Philosophy, Hindi Literature, English Literature, Sanskrit Literature, Ancient Indian History & Culture, Jain & Prakrit
+
+12. Performing & Fine Arts
+- Undergraduate: BPA, BFA, B.Music, B.Dance
+- Postgraduate: MPA, MFA, Music, Dance
+
+13. Library Science
+- Diploma: D.Lib.
+- Undergraduate: B.Lib. & Information Science
+- Postgraduate: M.Lib. & Information Science
+
+14. Social Work
+- Undergraduate: BSW
+- Postgraduate: MSW
+
+15. Basic & Applied Sciences
+- Undergraduate: B.Sc, B.Sc (Hons.)
+- Postgraduate: M.Sc
+  * Subjects: Botany, Zoology, Chemistry, Physics, Mathematics, Biotechnology, Microbiology, Forensic Science, Yoga & Naturopathy
+
+16. Other Programs
+- Certificate/Diploma/UG/PG/Ph.D. in all major disciplines
+
+
+
+
+
+

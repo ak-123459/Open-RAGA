@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 
-class Nvidia_chat_llm:
+class Nvidia_chat_llm():
 
 
     def __init__(self,**kwargs):
@@ -18,7 +18,7 @@ class Nvidia_chat_llm:
 
 
 
-    def load_model(self)->ChatNVIDIA:
+    async def load_model(self)->ChatNVIDIA:
 
 
         llm = ChatNVIDIA(

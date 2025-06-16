@@ -57,7 +57,7 @@ def ChatUI():
             st.markdown(
                 """
                 <h1 style='color: #1f77b4; font-size: 40px;'>
-                    Alankar <span style='font-size: 20px;'>Digital ASSISTANT</span>
+                   EVA  <span style='font-size: 20px;'>Digital ASSISTANT</span>
                 </h1>
                 """,
                 unsafe_allow_html=True

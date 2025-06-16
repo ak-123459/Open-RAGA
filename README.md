@@ -17,7 +17,6 @@ responses more accurate and generate more contextual responses .By applying
 
 
 
-
  <div align= "start">
   
   &nbsp; &nbsp; <a href="https://imgbb.com/"><img src="https://i.ibb.co/Ksw7GWz/list.png" width="40" alt="list" border="0"></a> <div/>
@@ -32,7 +31,7 @@ responses more accurate and generate more contextual responses .By applying
 3. [Model](#Model)
 4. [Prerequisites](#Prerequisites)
 5. [Project Structure](#Project-Structure)
-6. [Installation](#Installation)
+6. [Installation & Project Setup](#Installation-&-Project-Setup)
 7. [Methodology](#Methodlogy)
 8. [Limitations](#Limitations)
 9. [Conclusion](#Conclusion)
@@ -55,7 +54,7 @@ responses more accurate and generate more contextual responses .By applying
  
 - ## **Project Overview**
 
-In toady tech world generative artificial intelligence(GenAi) has many applications in different domains Every company wants to integrate ai models on production.why because after revolutionary development of large language models(LLMs) many real world and complex problems are solving.these large language models actually trained on large text , images data and using the attention mechanism they can understand pattern that make them more powerful.So in this projects we combined the natural language processing capabilities of LLM with the RAG(retrieval augmented generations) and [prompt engineering](https://www.ibm.com/think/topics/prompt-engineering) to build a real world chatbot application.
+In toady tech world generative artificial intelligence(GenAI) has many applications in different domains Every company wants to integrate ai models on production.why because after revolutionary development of large language models(LLMs) many real world and complex problems are solving.these large language models actually trained on large text , images data and using the attention mechanism they can understand pattern that make them more powerful.So in this projects we combined the natural language processing capabilities of LLM with the RAG(retrieval augmented generations) and [prompt engineering](https://www.ibm.com/think/topics/prompt-engineering) to build a real world chatbot application.
   
 
  <div/>
@@ -110,9 +109,9 @@ In toady tech world generative artificial intelligence(GenAi) has many applicati
 
 
  - ## **Model**
-- [gemma-1b-it](https://huggingface.co/google/gemma-3-1b-it) instructions tuned large language model.
+- [gemma-7b-it](https://huggingface.co/google/gemma-3-1b-it) instructions tuned text generation large language model.
   
-**Note:-** any instructions base large language models can be used.we recommend google/gemma-3-27b-it (for large scale projects).
+**Note:-** any instructions tuned text generations large language model .for more accurate reaponse we recommend google/gemma-3-27b-it.
   
 
 
@@ -139,9 +138,9 @@ In toady tech world generative artificial intelligence(GenAi) has many applicati
 - `Machine learning`
 - `Deep Learning(Tensorflow,pytorch)`
 - `Vector databases(FAISS,ChromaDB etc.)`
-- Ollama (for hosting llm locally)
+- An text generation LLM(Large language model)
 - `Cloud computing(Runpod or Google cloud etc.)`
-- `git , github`
+- `git,github`
 - `Software development`
 - `Programming(Python , javascript etc.)`
 - `Large language models`
@@ -158,7 +157,7 @@ In toady tech world generative artificial intelligence(GenAi) has many applicati
 - All required libraries included in above requirements.txt files,can be downloaded in your project environments by running command ```pip install -r requirements.txt```
 
 ### Python.
-  `Python version 3.10.11`
+  `Python version >= 3.10 <=3.12 `
 
   
 </div>
@@ -170,17 +169,80 @@ In toady tech world generative artificial intelligence(GenAi) has many applicati
 
 <div align= "start">
  
-&nbsp; &nbsp; <a href="https://imgbb.com/"><img src="🚀" alt="rocket" width="50" border="0"></a>
+&nbsp; &nbsp; <a href="https://imgbb.com/"><img src="https://i.ibb.co/5hBTLK6/rocket.png" alt="rocket" width="50" border="0"></a>
 
 </div>
 
-- ## **Installation**
+
+- ## **Installation & Project Setup**
+  
+  
+**Python Installations(If not installed**
+
+
+***⬇️FOLLOW THE BELOW LINKS⬇️***
+
+
+
+[WINDOWS 10](https://www.geeksforgeeks.org/download-and-install-python-3-latest-version/#install-python-on-windows-10)
+
+[LINUX](https://www.geeksforgeeks.org/download-and-install-python-3-latest-version/#install-python-on-linux)
+
+
+
+
+
+**Clone the repo.**
+
+  ``git clone https://github.com/ak-123459/Open-RAGA.git``
+``cd Open-RAGA``
+
+
 
 ### Linux:-
 
+**Create virtual environmemt**
+
+``pyhon -m venv OpenRaga``
+``source OpenRaga\bin\activate``
+
+Installed necessary packages
+
+``pip install -r requirements.txt``
+
+
+Run app using uvivorn
+``uvicorn main:app --reload``
+
+**Note:-** if there any error on app run rerun the above 🖕 command..
+
+
+Open new terminal window and test app by running command..
+
+``curl  http://localhost:8000``
+
+🖕🖕 above command will return response:-
+{"health":"ok"}
+
+
+- ## **Conclusion**
+
+In the development of AI chatbot application we saw that pretrained LLM helps alot of for more robust 	AI applications development.
+
+
+
+- ## **Contributors**
+
+- [Akash 	Prasad Mishra](https://github.com/ak-123459/)
+- Saumil Athya
+  
 
 
 
 
+ 
 
 
+
+
+  
