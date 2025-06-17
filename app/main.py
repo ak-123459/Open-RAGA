@@ -39,7 +39,8 @@ NVIDIA_NVC_API_KEY = os.getenv('NVIDIA_LLM_API')
 
 
 # load config
-def load_config(filename="model_config.yaml", config_dir="config/prod/"):
+def load_config(project_root_dir=
+current_file = Path(__file__).resolve()):
     
     """
     Loads a YAML configuration file safely from the given path.
