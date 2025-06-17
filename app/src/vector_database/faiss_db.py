@@ -16,8 +16,8 @@ class Faiss_db:
   def __init__(self,**kwargs):
         self.vector_store_path = kwargs.get("vector_store_path")
         self.embedding_model =  kwargs.get("embedding_model")
-        self.chunk_size  =  kwargs.get("chunk_size")
-        self.chunk_overlap  =  kwargs.get("chunk_overlap")
+        self.chunk_size  =  int(kwargs.get("chunk_size"))
+        self.chunk_overlap  =  int(kwargs.get("chunk_overlap"))
         self.allow_dangerous_deserialization = kwargs.get("allow_dangerous_deserialization",True)
         self.index_name = kwargs.get("index_name","index")
         self.docs_path = kwargs.get("docs_path")
