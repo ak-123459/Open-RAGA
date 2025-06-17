@@ -11,7 +11,7 @@ import uvicorn
 import time
 from fastapi.middleware.cors import CORSMiddleware
 import yaml
-
+from .settings import MODEL_CONFIG_PATH
 from .src.llm.llm_factory import CHATLLMFactory
 from .src.embedder.embedder_factory import EMBFactory
 from .src.vector_database.vector_db_factory import VECTORDBFactory
@@ -39,8 +39,7 @@ NVIDIA_NVC_API_KEY = os.getenv('NVIDIA_LLM_API')
 
 
 # load config
-def load_config(project_root_dir=
-current_file = Path(__file__).resolve()):
+def load_config(config_path=MODEL_CONFIG_PATH):
     
     """
     Loads a YAML configuration file safely from the given path.
@@ -52,10 +51,7 @@ current_file = Path(__file__).resolve()):
     Returns:
         dict: Parsed YAML config.
     """
-    # Get absolute path safely
-    base_dir = os.path.dirname(os.path.abspath(__file__))  # app/config/prod
-    config_path = os.path.join(base_dir, config_dir, filename) if not os.path.isabs(filename) else filename
-
+  
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
