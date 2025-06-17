@@ -50,7 +50,7 @@ class Huggingface_embedders(EMBInterface):
 
                  embedding_model = SentenceTransformer(self.model_name)  # get model from sources
 
-                 embedding_model.save(self.model_path) # save the model 
+                 embedding_model.save(str(self.model_path)) # save the model 
 
                  
                  logging.info(f"Embedding Model downloaded Successfully at {self.model_path}...")
