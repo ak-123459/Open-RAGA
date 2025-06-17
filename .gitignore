@@ -5,9 +5,6 @@
 .idea/
 
 
-# Ignore vector database
-app/data/vector_db/
-
 
 # Byte-compiled / cache files
 __pycache__/
