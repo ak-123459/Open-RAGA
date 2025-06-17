@@ -125,6 +125,3 @@ async def get_response(request: ChatInput):
         logger.error("❌ Error processing request: %s", traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
 
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
