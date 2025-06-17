@@ -11,7 +11,7 @@ db_args:
   chunk_size: 1500
   chunk_overlap: 350
   output_path: ""
-  docs_path: "./data/vector_db/preprocessed/"
+  docs_path: "./data/preprocessed/"
 
 
 embedder_args:
