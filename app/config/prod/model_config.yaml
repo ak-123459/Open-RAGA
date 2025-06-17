@@ -8,8 +8,8 @@ chat_llm_args:
 db_args:
   type: faiss
   vector_store_path: "./data/vector_db/knowledge_base/"
-  chunk_size: "./data/vector_db/knowledge_base/"
-  chunk_overlap: true
+  chunk_size: 1500
+  chunk_overlap: 350
   output_path: ""
   docs_path: "./data/vector_db/preprocessed/"
 
