@@ -37,10 +37,30 @@ manager = None
 NVIDIA_NVC_API_KEY = os.getenv('NVIDIA_LLM_API')
 
 
-# Load config
-def load_config(path="./config/prod/model_config.yaml"):
-    with open(path, "r") as f:
+
+# load config
+def load_config(filename="model_config.yaml", config_dir="app/config/prod/"):
+    
+    """
+    Loads a YAML configuration file safely from the given path.
+
+    Args:
+        filename (str): YAML filename.
+        config_dir (str): Path to the directory containing the YAML config.
+
+    Returns:
+        dict: Parsed YAML config.
+    """
+    # Get absolute path safely
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # app/config/prod
+    config_path = os.path.join(base_dir, config_dir, filename) if not os.path.isabs(filename) else filename
+
+    with open(config_path, "r") as f:
         return yaml.safe_load(f)
+
+
+
+
 
 
 # FastAPI app initialization
