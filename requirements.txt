@@ -27,6 +27,7 @@ click==8.1.8
 colorama==0.4.6
 coloredlogs==15.0.1
 cons==0.4.6
+gunicorn
 contourpy==1.3.0
 cryptography==44.0.2
 cycler==0.12.1
