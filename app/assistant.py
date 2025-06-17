@@ -10,19 +10,19 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.runnables import RunnableLambda, RunnableMap
 import os
+from .settings import PROMPT_TEMPLATES_PATH 
 import yaml
 from langchain.memory import ConversationBufferWindowMemory
 from pathlib import Path
 import re
 
-# Get the root path
-root_path = os.path.dirname(os.path.abspath(__file__))
-
 
 
 # Load a .yaml or .yml file
-with open(Path(root_path).parent/"app/generation/prompt_templates.yaml", "r",encoding="utf-8") as file:
+with open(PROMPT_TEMPLATES_PATH , "r",encoding="utf-8") as file:
     prompt_config = yaml.safe_load(file)
+
+
 
 
 translate_prompt_Temp = get_template('translator')['translator']
