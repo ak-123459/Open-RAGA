@@ -1,7 +1,7 @@
 from langchain_core.runnables import Runnable, RunnableConfig
 from typing import Any, Dict, Optional
 from langchain_core.runnables.utils import Input, Output
-from generation.prompt_templates import get_template
+from .generation.prompt_templates import get_template
 from langchain_core.output_parsers import StrOutputParser
 from langchain.chains import LLMChain
 from langchain.chains import create_history_aware_retriever
