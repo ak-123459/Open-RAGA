@@ -1,8 +1,3 @@
-from retrieval.vector_store import get_vector_store
-from generation.prompt_templates import get_template  
-import ipywidgets as widgets
-from IPython.display import display, Markdown
-import time
 import yaml
 from pathlib import Path
 import os
@@ -20,12 +15,6 @@ app_name = app_config['app_name']
 
 
 import streamlit as st
-import random
-import time
-
-
-
-
 
 st.title(f"{app_name}")
 

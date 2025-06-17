@@ -6,7 +6,7 @@
 
 
 # Ignore vector database
-./data/vector_db/
+app/data/vector_db/
 
 
 # Byte-compiled / cache files
@@ -16,11 +16,11 @@ __pycache__/
 
 
 # Ignore embedding model files
-./src/embedder/model_checkpoints/
+app/src/embedder/model_checkpoints/
 
 
 
 #Ignore docs files
-./data/preprocessed/
+app/data/preprocessed/
 
 
