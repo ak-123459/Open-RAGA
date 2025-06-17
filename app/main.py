@@ -11,7 +11,7 @@ import uvicorn
 import time
 from fastapi.middleware.cors import CORSMiddleware
 import yaml
-from .settings import MODEL_CONFIG_PATH,EMBD_MODEL_DIR,DOCS_PATH
+from .settings import MODEL_CONFIG_PATH,EMBD_MODEL_DIR,DOCS_PATH,VECTOR_STORE_PATH
 from .src.llm.llm_factory import CHATLLMFactory
 from .src.embedder.embedder_factory import EMBFactory
 from .src.vector_database.vector_db_factory import VECTORDBFactory
