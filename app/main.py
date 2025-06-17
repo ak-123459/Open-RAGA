@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from .assistant import ChatManager
-from .models.schemas import ChatInput, ChatOutput
+from assistant import ChatManager
+from models.schemas import ChatInput, ChatOutput
 from typing import Optional
 from dotenv import load_dotenv
 import os
