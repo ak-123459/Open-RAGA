@@ -20,7 +20,7 @@ class Faiss_db:
         self.chunk_overlap  =  int(kwargs.get("chunk_overlap"))
         self.allow_dangerous_deserialization = kwargs.get("allow_dangerous_deserialization",True)
         self.index_name = kwargs.get("index_name","index")
-        self.docs_path = kwargs.get("docs_path")
+        self.docs_path = str(kwargs.get("docs_path"))
 
   async  def load_faiss_db(self):
         if(os.path.exists(self.vector_store_path)):
