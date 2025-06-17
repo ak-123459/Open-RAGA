@@ -11,7 +11,7 @@ import uvicorn
 import time
 from fastapi.middleware.cors import CORSMiddleware
 import yaml
-from .settings import MODEL_CONFIG_PATH
+from .settings import MODEL_CONFIG_PATH,EMBD_MODEL_PATH,DOCS_PATH
 from .src.llm.llm_factory import CHATLLMFactory
 from .src.embedder.embedder_factory import EMBFactory
 from .src.vector_database.vector_db_factory import VECTORDBFactory
@@ -85,7 +85,10 @@ async def on_startup():
         chat_llm_args = model_config['chat_llm_args']
         chat_llm_args['api_key'] = NVIDIA_NVC_API_KEY
         db_args = model_config['db_args']
+        db_args['vector_store_path'] = VECTOR_STORE_PATH
+        db_args['docs_path'] = DOCS_PATH
         embedder_args = model_config['embedder_args']
+        embedder_args['model_path'] = EMBD_MODEL_PATH
 
         # Create pipelines
         llm_pipe = CHATLLMFactory.create_chat_model_pipeline(chat_llm_args['type'], **chat_llm_args)
