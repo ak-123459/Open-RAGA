@@ -52,7 +52,7 @@ def load_config(config_path=MODEL_CONFIG_PATH):
         dict: Parsed YAML config.
     """
   
-    with open(config_path, "r") as f:
+    with open(MODEL_CONFIG_PATH, "r") as f:
         return yaml.safe_load(f)
 
 
