@@ -10,7 +10,7 @@ root_path = os.path.dirname(os.path.abspath(__file__))
 
 
 # Load a .yaml or .yml file
-with open(Path(root_path).parent/"generation/prompt_templates.yaml", "r",encoding="utf-8") as file:
+with open(Path(root_path).parent/"app/generation/prompt_templates.yaml", "r",encoding="utf-8") as file:
     prompt_config = yaml.safe_load(file)
 
 
