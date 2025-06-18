@@ -105,6 +105,8 @@ def ChatUI():
         st.stop()
 
     st.info("☑️ This is a official Virtual assistant for Eklavya University , Damoh.")
+    st.info("💬 Welcome! I can help with courses,admissions and more.")
+
     with st.container(border=True):
     
         col1, col2, col3, col4 = st.columns([2, 7, 2, 2])
