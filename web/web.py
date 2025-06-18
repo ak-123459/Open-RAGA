@@ -115,8 +115,8 @@ def ChatUI():
     
             st.empty()
     
-            st.image("assets/icon/eklavaya_university_logo.png", width=40)
-            st.image("assets/icon/google-gemini-icon.png", width=40)
+            st.image("app/assets/icon/eklavaya_university_logo.png", width=40)
+            st.image("app/assets/icon/google-gemini-icon.png", width=40)
     
         with col2:
 
@@ -131,7 +131,7 @@ def ChatUI():
     
         with col4:
             st.markdown("")
-            st.image("assets/icon/icons8-google-assistant-120.png", width=80)
+            st.image("app/assets/icon/icons8-google-assistant-120.png", width=80)
     
     
     # Initialize chat history
