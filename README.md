@@ -9,7 +9,7 @@
 
 [**RAG(Retrieval augmented generations)**](https://cloud.google.com/use-cases/retrieval-augmented-generation ) is a techniques that make [**LLM**](https://www.ibm.com/think/topics/large-language-models)
 responses more accurate and generate more contextual responses .By applying 
-[**RAG(Retrieval augmented generations)**](https://cloud.google.com/use-cases/retrieval-augmented-generation) and [prompt engineering](https://www.ibm.com/think/topics/prompt-engineering)  we developed a customer services assistant for a poster printing shop.this is a Open-source project anybody that interested to developed his own chatbot this project for them.just need to apply prompt engineering and RAG techniques.a demo [EVA](https://eklavya-virtual-assistant.streamlit.app/) web app developed from this repo for eklavya university project.
+[**RAG(Retrieval augmented generations)**](https://cloud.google.com/use-cases/retrieval-augmented-generation) and [prompt engineering](https://www.ibm.com/think/topics/prompt-engineering)  we developed a customer services assistant for a poster printing shop.this is a Open-source project anybody that interested to developed his own chatbot this project for them.just need to apply prompt engineering and RAG techniques.a demo [EVA](https://eklavya-virtual-assistant.streamlit.app/) web app developed from this repo for eklavya university project.for more details about project read full docs from [EVA DOCS](https://docs.google.com/document/d/1shwghVTmBg_TxpKY-nASosH77q0pgSOmi5jzHEG5fK0/edit?usp=sharing)
 
   &nbsp; &nbsp; 
 
