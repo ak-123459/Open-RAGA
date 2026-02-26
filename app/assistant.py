@@ -132,9 +132,7 @@ class ChatManager:
             "chat_history": formatted_history   # ✅ properly formatted
         })
 
-        # translate from english to hindi   
-        translated = (translate_to_hindi | self.llm).invoke({'query': result['answer']})
+      
+        print("----translated---", result.content.strip())
         
-        print("----translated---", translated.content.strip())
-        
-        return translated.content.strip()
+        return result.content.strip()
