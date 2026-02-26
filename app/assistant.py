@@ -125,15 +125,10 @@ class ChatManager:
         # ✅ Format chat history to proper LangChain message objects
         formatted_history = self._format_chat_history(chat_history)
 
-        # translate the text from romanized hindi to english
-        translated = (translate_prompt_Temp | self.llm).invoke({'query': query})
-
-        # get the actual translation
-        translated_text = translated.content.strip()
 
         # call the rag chain with formatted history
         result = self.rag_chain.invoke({
-            "input": translated_text,
+            "input": query,
             "chat_history": formatted_history   # ✅ properly formatted
         })
 
