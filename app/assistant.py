@@ -119,7 +119,7 @@ class ChatManager:
         return fixed
 
 
-    # combine all steps in run function
+ # combine all steps in run function
     async def run(self, query, chat_history) -> Any:
 
         # ✅ Format chat history to proper LangChain message objects
@@ -133,6 +133,4 @@ class ChatManager:
         })
 
       
-        print("----translated---", result.content.strip())
-        
-        return result.content.strip()
+        return result['answer'].strip()
